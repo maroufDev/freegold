@@ -1,37 +1,49 @@
+@font-face {
+    font-family: 'Vazir';
+    src: url('Vazir.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'VazirThin';
+    src: url('VazirThin.ttf') format('truetype');
+}
+
 body {
+    background-color: #FFFDF6FE;
+    font-family: 'Vazir', sans-serif;
+    margin: 0;
+    padding: 0;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    height: 100vh;
 }
 
-#gameArea {
-    position: relative;
-    width: 400px;
-    height: 600px;
-    border: 2px solid #333;
-    overflow: hidden;
+.container {
+    text-align: center;
 }
 
-#basket {
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    width: 70px;
-    height: 20px;
-    background-color: #ffcc00;
-    transform: translateX(-50%);
-}
-
-#fallingObject {
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    background-color: red;
-}
-
-#score {
-    margin-top: 20px;
+h1 {
+    margin-bottom: 40px;
     font-size: 24px;
+    color: #333;
+}
+
+.big-button {
+    background-color: #FF7F50; /* Coral */
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 15px 30px;
+    font-size: 20px;
+    margin: 10px 0;
+    cursor: pointer;
+    width: 80%;
+    font-family: 'Vazir', sans-serif;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.big-button:hover {
+    background-color: #FF6347; /* Tomato */
+    transform: scale(1.05);
 }
